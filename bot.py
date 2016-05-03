@@ -45,16 +45,16 @@ teams=[["ATL",      "Atlanta",      "Hawks"],
 ["UTA"	,"Utah", "Jazz"],
 ["WSH"	,"Washington" ,"Wizards"]];
 
-if not os.path.isfile("posts_replied_to.txt"):
-    posts_replied_to = []
+#if not os.path.isfile("posts_replied_to.txt"):
+posts_replied_to = []
 
 # If we have run the code before, load the list of posts we have replied to
-else:
-    # Read the file into a list and remove any empty values
-    with open("posts_replied_to.txt", "r") as f:
-        posts_replied_to = f.read()
-        posts_replied_to = posts_replied_to.split("\n")
-        posts_replied_to = filter(None, posts_replied_to)
+#else:
+#    # Read the file into a list and remove any empty values
+#    with open("posts_replied_to.txt", "r") as f:
+#        posts_replied_to = f.read()
+#        posts_replied_to = posts_replied_to.split("\n")
+#        posts_replied_to = filter(None, posts_replied_to)
 
 
 
@@ -97,4 +97,7 @@ with open("posts_replied_to.txt", "w") as f:
 #with open("results.txt", "w") as f:
 #    for result in playing:
 #        for resultresult in result:
-#            f.write(resultresult + "\n")            
+#            f.write(resultresult + "\n"
+for result in playing:
+    print result
+    print "\n"
